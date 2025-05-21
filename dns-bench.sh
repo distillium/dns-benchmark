@@ -39,7 +39,7 @@ declare -A dns_servers=(
 )
 
 domains=("google.com" "yandex.ru" "openai.com" "github.com" "wikipedia.org" "t.me" "cloudflare.com" "speedtest.net")
-repeats=30
+repeats=10
 
 declare -A results
 
