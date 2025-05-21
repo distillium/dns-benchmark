@@ -29,10 +29,8 @@ CYAN="\033[0;36m"
 NC="\033[0m"
 
 declare -A dns_servers=(
-  ["Cloudflare_1"]="1.1.1.1"
-  ["Cloudflare_2"]="1.0.0.1"
-  ["Google_1"]="8.8.8.8"
-  ["Google_2"]="8.8.4.4"
+  ["Cloudflare"]="1.1.1.1"
+  ["Google"]="8.8.8.8"
   ["OpenDNS"]="208.67.222.222"
   ["Neustar"]="156.154.70.1"
   ["Level3"]="4.2.2.1"
@@ -102,10 +100,8 @@ for ((i=0; i<${#sorted_results[@]}; i+=2)); do
 done
 
 case $best_dns in
-  Cloudflare_1) best_ip="1.1.1.1" ;;
-  Cloudflare_2) best_ip="1.0.0.1" ;;
-  Google_1)     best_ip="8.8.8.8" ;;
-  Google_2)     best_ip="8.8.4.4" ;;
+  Cloudflare) best_ip="1.1.1.1" ;;
+  Google)     best_ip="8.8.8.8" ;;
   OpenDNS)      best_ip="208.67.222.222" ;;
   Neustar)      best_ip="156.154.70.1" ;;
   Level3)       best_ip="4.2.2.1" ;;
