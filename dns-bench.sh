@@ -36,7 +36,7 @@ declare -A dns_servers=(
   ["Level3"]="4.2.2.1"
 )
 
-domains=("google.com" "yandex.ru" "openai.com" "github.com" "wikipedia.org" "t.me" "cloudflare.com" "speedtest.net")
+domains=("google.com" "yandex.ru" "openai.com" "github.com" "wikipedia.org" "t.me" "instagram.com" "cloudflare.com" "speedtest.net")
 repeats=10
 
 declare -A results
